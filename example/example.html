@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>client logger example</title>
+    </head>
+    <body>
+        <p>
+            open console to see result and use a newer version of firefox(with firebug) or google chrome.<br>
+            If your browser does not support colorized output make sure you do not activate colorMode.
+        </p>
+
+        <script src="../src/utils.js"></script>
+        <script src="../src/logger.js"></script>
+        <script>
+            var logger = new Logger({
+                logLevel: 'debug',
+                colorMode: true
+            });
+
+            var logger2 = new Logger({
+                logLevel: 'error'
+            });
+
+            logger.log('error', 'error message');
+            logger.log('warn', 'warn message');
+            logger.log('info', 'info message');
+            logger.log('debug', 'debug message');
+
+            logger.error('error message');
+            logger.warn('warn message');
+            logger.info('info message');
+            logger.debug('debug message');
+
+            var foo = {
+                bar: 'value',
+                foo: 'value'
+            }
+
+            logger.debug('logging object', foo);
+            logger.log('error', 'logging object with direct call', foo);
+
+            logger2.log('error', 'error message');
+            logger2.log('warn', 'warn message'); // will not be printed
+        </script>
+    </body>
+</html>

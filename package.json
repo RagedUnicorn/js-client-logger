@@ -1,0 +1,24 @@
+{
+    "name": "js-client-logger",
+    "version": "0.0.1",
+    "description": "Log helper for clientside javascript logging",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RagedUnicorn/js-client-logger"
+    },
+    "keywords": [
+        "logger, client-logger"
+    ],
+    "author": "Wiesendanger Michael <michael.wiesendanger@gmail.com>",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/RagedUnicorn/js-client-logger/issues"
+    },
+    "devDependencies": {
+        "grunt": "~1.0.3",
+        "grunt-contrib-jshint": "~2.0.0",
+        "grunt-contrib-jasmine": "~2.0.3"
+    },
+    "private": true
+}
